@@ -2,9 +2,9 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'ubuntu-20.04'
+  name: windowspool
   demands:
-  - npm
+   - agent.name -equals windowsagent
 
 variables:
   buildConfiguration: 'Release'
